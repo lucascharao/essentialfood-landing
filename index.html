@@ -34,6 +34,14 @@
       linear-gradient(180deg, rgba(245,248,252,.80) 0%, rgba(238,244,251,.86) 100%),
       url('background.png') center center / cover no-repeat;
   }
+  /* versão mobile: usa a foto vertical */
+  @media (max-width:640px){
+    .bg{
+      background:
+        linear-gradient(180deg, rgba(245,248,252,.80) 0%, rgba(238,244,251,.86) 100%),
+        url('background1.png') center center / cover no-repeat;
+    }
+  }
   /* leve realce da marca sobre a foto */
   .bg::after{
     content:"";position:absolute;inset:0;
