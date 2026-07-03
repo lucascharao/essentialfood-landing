@@ -31,9 +31,13 @@
   .bg{
     position:fixed;inset:0;z-index:0;overflow:hidden;
     background:
-      radial-gradient(1200px 700px at 50% -10%, #dbe8fa 0%, transparent 60%),
-      radial-gradient(900px 500px at 100% 110%, #d8f2e2 0%, transparent 55%),
-      linear-gradient(180deg,#f5f8fc 0%, #eef4fb 100%);
+      linear-gradient(180deg, rgba(245,248,252,.80) 0%, rgba(238,244,251,.86) 100%),
+      url('background.png') center center / cover no-repeat;
+  }
+  /* leve realce da marca sobre a foto */
+  .bg::after{
+    content:"";position:absolute;inset:0;
+    background:radial-gradient(900px 520px at 50% 30%, rgba(255,255,255,.35), transparent 70%);
   }
   /* ---------- Reveal de carregamento (limpeza verde/navy) ---------- */
   .wiper{
